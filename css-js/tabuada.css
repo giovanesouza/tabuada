@@ -5,59 +5,91 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+    font-size: 62.2%;
+}
 
 body {
-    background-color: #212529;
     
+    font-size: 1.6rem;
+
     display: flex;
     justify-content: center;
     align-items: center;
-
-    width: 100vw;
-    height: 100vh;
 }
 
 .calculadora {
     background-color: #fff;
-    
-    padding: 10%;
-
-    box-shadow: 2px 2px 15px 5px rgb(122, 115, 115);
+    height: 100vh;
+    width: 100vw;
+    padding: 5%;
 
     text-align: center;
 }
 
 h1 {
     color: #134a81;
-    font-size: 26px;
-    margin-bottom: 2%;
+    font-size: 2.6rem;
+    margin-bottom: 5%;
 }
 
 input {
-    font-size: 20px;
+    font-size: 1.6rem;
     text-align: center;
     width: 100%;
-    padding: 10px;
+    padding: 1rem;
+    outline: none;
+ 
+   
+}
 
+input:focus {
+    border: none;
+    box-shadow: 0 0 0.5rem #134a81;
 }
 
 button {
+    background-color: #fff;
+    color: #134a81;
+    border: 1px solid #134a81;
+
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+
+    transition: all .2s;
+}
+
+button:hover {
     background-color: #134a81;
     color: #fff;
-    border: none;
-    width: 100%;
-    margin-top: 10px;
-    padding: 10px;
+
+
+    cursor: pointer;
 }
 
 
 #resultado {
 
-    width: 100%;
-color: #212529;
+    width: auto;
+    color: #212529;
 
     font-weight: bold;
-    
+
     margin-top: 5%;
-    
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+html {
+
+    font-size: 50%;
+
+}
+
+
+
 }
